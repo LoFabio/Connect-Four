@@ -1,6 +1,6 @@
 import java.rmi.UnexpectedException;
 import java.util.Scanner;
-import java.util.concurrent.TimeUnit;
+//import java.util.concurrent.TimeUnit;
 
 public class ConnectFour {
     private final int ROWS = 6;
@@ -24,7 +24,8 @@ public class ConnectFour {
         }
         System.out.println("The game will close in 5 seconds.");
         try {
-            TimeUnit.SECONDS.sleep(5);
+            //TimeUnit.SECONDS.sleep(5);
+            Thread.sleep(5000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
